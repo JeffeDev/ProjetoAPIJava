@@ -1,8 +1,7 @@
 package br.com.caelum.clines.shared.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import java.math.BigDecimal;
+import java.time.Duration;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -13,8 +12,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
-import java.math.BigDecimal;
-import java.time.Duration;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "flights")
